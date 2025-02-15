@@ -1,0 +1,28 @@
+.hero-section {
+    background: linear-gradient(to bottom, rgba(10, 10, 26, 0.9), rgba(10, 10, 26, 1)),
+                url('https://app.trickle.so/storage/public/images/usr_0b6c12ccc8000001/b9abdb97-cb91-43a8-942f-b459796bdd7c.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.feature-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-item {
+    border-left: 3px solid #6c2bd9;
+    padding-left: 1rem;
+}
+
+.provider-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+}
