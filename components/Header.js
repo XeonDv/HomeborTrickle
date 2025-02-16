@@ -1,7 +1,16 @@
 function Header() {
     try {
         const handleLogin = () => {
-            window.location.href = '/login';
+            const currentHost = window.location.hostname;
+            const isSubdomain = currentHost.split('.').length > 2;
+            
+            if (isSubdomain) {
+                // If on a provider subdomain, go directly to login
+                window.location.href = `https://${currentHost}/login`;
+            } else {
+                // If on main domain, go to provider selection
+                window.location.href = 'https://homebor.trickle.host/login';
+            }
         };
 
         return (

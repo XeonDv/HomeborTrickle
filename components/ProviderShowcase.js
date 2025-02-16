@@ -1,5 +1,9 @@
 function ProviderShowcase() {
     try {
+        const handleProviderClick = (subdomain) => {
+            window.location.href = `https://${subdomain}.homebor.trickle.host`;
+        };
+
         const providers = [
             { 
                 id: "homestayplus",
@@ -35,10 +39,6 @@ function ProviderShowcase() {
             }
         ];
 
-        const handleProviderClick = (provider) => {
-            window.location.href = `/${provider.subdomain}`;
-        };
-
         return (
             <section id="providers" className="py-20 bg-secondary-light" data-name="providers-section">
                 <div className="container mx-auto px-4">
@@ -50,7 +50,7 @@ function ProviderShowcase() {
                             <div
                                 key={provider.id}
                                 className="provider-card p-6 text-center cursor-pointer transition-transform hover:scale-105"
-                                onClick={() => handleProviderClick(provider)}
+                                onClick={() => handleProviderClick(provider.subdomain)}
                                 data-name={`provider-card-${index}`}
                             >
                                 <i className={`${provider.logo} text-4xl text-primary-main mb-4`}></i>
