@@ -1,0 +1,60 @@
+/* Main Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #333333;
+    background-color: #F8F8F8;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    min-height: 100vh;
+}
+
+.main-content {
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2), -3px -3px 0px rgba(255, 255, 255, 0.8);
+}
+
+.btn-primary {
+    background-color: #FF00FF;
+    color: #FFFFFF;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn-primary:hover {
+    background-color: #CC00CC;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #FFFF00;
+    color: #000000;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn-secondary:hover {
+    background-color: #CCCC00;
+    transform: translateY(-2px);
+}

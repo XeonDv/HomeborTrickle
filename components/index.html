@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HostAbroad - Connect international students with welcoming host families across different cities. Find your perfect homestay match today.">
+    <meta name="keywords" content="homestay, international students, host families, student accommodation, study abroad, student housing">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="HostAbroad - Homestay Provider">
+    <meta property="og:description" content="Connect international students with welcoming host families across different cities. Find your perfect homestay match today.">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HostAbroad - Homestay Provider">
+    <meta name="twitter:description" content="Connect international students with welcoming host families across different cities. Find your perfect homestay match today.">
+    
+    <title>HostAbroad - Homestay Provider</title>
+    
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/auth.css" rel="stylesheet">
+    <link href="styles/dashboard.css" rel="stylesheet">
+    <link href="styles/forms.css" rel="stylesheet">
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- Utils -->
+    <script type="text/babel" src="utils/validation.js"></script>
+    <script type="text/babel" src="utils/api.js"></script>
+    <script type="text/babel" src="utils/theme.js"></script>
+
+    <!-- Components -->
+    <script type="text/babel" src="components/common/Button.js"></script>
+    <script type="text/babel" src="components/common/Input.js"></script>
+    <script type="text/babel" src="components/common/Select.js"></script>
+    <script type="text/babel" src="components/common/Alert.js"></script>
+    <script type="text/babel" src="components/common/Modal.js"></script>
+    <script type="text/babel" src="components/layout/Header.js"></script>
+    <script type="text/babel" src="components/layout/Sidebar.js"></script>
+    <script type="text/babel" src="components/auth/LoginForm.js"></script>
+    <script type="text/babel" src="components/auth/RegisterForm.js"></script>
+
+    <!-- Features -->
+    <script type="text/babel" src="features/students/StudentList.js"></script>
+    <script type="text/babel" src="features/students/StudentForm.js"></script>
+    <script type="text/babel" src="features/students/StudentDetail.js"></script>
+    <script type="text/babel" src="features/families/FamilyList.js"></script>
+    <script type="text/babel" src="features/families/FamilyForm.js"></script>
+    <script type="text/babel" src="features/families/FamilyDetail.js"></script>
+    <script type="text/babel" src="features/matching/MatchingDashboard.js"></script>
+    <script type="text/babel" src="features/payments/PaymentDashboard.js"></script>
+
+    <!-- Pages -->
+    <script type="text/babel" src="pages/Home.js"></script>
+    <script type="text/babel" src="pages/Login.js"></script>
+    <script type="text/babel" src="pages/Register.js"></script>
+    <script type="text/babel" src="pages/Dashboard.js"></script>
+
+    <!-- Main -->
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
